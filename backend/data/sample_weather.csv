@@ -1,0 +1,21 @@
+region,season,temp,humidity,pressure,wind,probability,volume
+Uttar Pradesh (Gangetic Plain),Monsoon,32,85,1005,12,82,48.5
+Punjab & Haryana,Monsoon,30,80,1008,10,76,46.2
+Bihar & West Bengal,Monsoon,33,88,1002,14,86,52.3
+Maharashtra & Madhya Pradesh,Monsoon,34,75,1010,15,72,44.1
+Rajasthan (Arid),Summer,38,35,1018,18,32,19.7
+South India (Coastal),Monsoon,29,92,1003,8,88,54.6
+Uttar Pradesh (Gangetic Plain),Rabi,22,55,1015,10,43,25.0
+Punjab & Haryana,Rabi,20,60,1012,8,47,28.4
+Bihar & West Bengal,Rabi,24,68,1009,12,55,34.8
+Maharashtra & Madhya Pradesh,Rabi,27,62,1013,14,49,31.5
+Rajasthan (Arid),Summer,36,45,1015,20,37,22.1
+South India (Coastal),Summer,31,78,1009,10,73,41.8
+Uttar Pradesh (Gangetic Plain),Monsoon,28,80,1006,9,79,47.0
+Punjab & Haryana,Monsoon,31,84,1004,11,81,49.2
+Bihar & West Bengal,Monsoon,34,90,1001,13,89,55.0
+Maharashtra & Madhya Pradesh,Rabi,26,58,1016,9,46,30.5
+Rajasthan (Arid),Monsoon,37,50,1010,22,41,23.0
+South India (Coastal),Rabi,29,74,1011,7,68,38.6
+Uttar Pradesh (Gangetic Plain),Summer,35,52,1018,16,36,20.7
+Punjab & Haryana,Summer,37,48,1017,17,33,18.9

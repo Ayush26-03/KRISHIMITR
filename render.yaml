@@ -1,0 +1,20 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: krishimitr-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m backend.app
+    envVars:
+      - key: ALLOWED_ORIGINS
+        sync: false
+
+  # Frontend Static Site
+  - type: web
+    name: krishimitr-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        sync: false
