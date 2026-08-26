@@ -5,5 +5,3 @@ __pycache__/
 *.pyd
 *.log
 backend/__pycache__/
-backend/models/*.joblib
-backend/models/*.h5

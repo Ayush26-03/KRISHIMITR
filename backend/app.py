@@ -106,7 +106,10 @@ def load_market_model():
     if not os.path.exists(MARKET_MODEL_PATH):
         print(f"Market model not found at {MARKET_MODEL_PATH}. Auto-training market model...")
         try:
-            from backend.train_market_model import main as train_market
+            try:
+                from backend.train_market_model import main as train_market
+            except ModuleNotFoundError:
+                from train_market_model import main as train_market
             train_market()
         except Exception as e:
             print(f"Error auto-training market model: {e}")
@@ -118,12 +121,16 @@ def load_rainfall_model():
     if not os.path.exists(RAINFALL_MODEL_PATH):
         print(f"Rainfall model not found at {RAINFALL_MODEL_PATH}. Auto-training rainfall model...")
         try:
-            from backend.train_rainfall_model import main as train_rainfall
+            try:
+                from backend.train_rainfall_model import main as train_rainfall
+            except ModuleNotFoundError:
+                from train_rainfall_model import main as train_rainfall
             train_rainfall()
         except Exception as e:
             print(f"Error auto-training rainfall model: {e}")
             raise FileNotFoundError(f"Rainfall model not found and auto-training failed: {e}")
     return joblib.load(RAINFALL_MODEL_PATH)
+
 
 
 def preprocess_image(file_bytes: bytes, target_size=(224, 224)) -> torch.Tensor:

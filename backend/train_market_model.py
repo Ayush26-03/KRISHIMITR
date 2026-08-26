@@ -3,7 +3,10 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-from backend.recommendation_data import CROP_CATALOG, SEASONS, SOIL_TYPES
+try:
+    from backend.recommendation_data import CROP_CATALOG, SEASONS, SOIL_TYPES
+except ModuleNotFoundError:
+    from recommendation_data import CROP_CATALOG, SEASONS, SOIL_TYPES
 
 import os
 

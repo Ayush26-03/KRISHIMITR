@@ -7,7 +7,10 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-from backend.weather_data import WEATHER_REGIONS, WEATHER_SEASONS
+try:
+    from backend.weather_data import WEATHER_REGIONS, WEATHER_SEASONS
+except ModuleNotFoundError:
+    from weather_data import WEATHER_REGIONS, WEATHER_SEASONS
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "models", "rainfall_model.joblib")
 
@@ -85,22 +88,13 @@ def train_model(X, y):
     return model, score
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Train or retrain the rainfall prediction model.")
-    parser.add_argument(
-        "--data",
-        type=str,
-        default=None,
-        help="Path to a CSV dataset containing historical weather and rainfall information.",
-    )
-    args = parser.parse_args()
-
-    if args.data and os.path.exists(args.data):
-        print(f"Loading real weather dataset from {args.data}")
-        X, y = load_real_data(args.data)
+def main(data: str = None):
+    if data and os.path.exists(data):
+        print(f"Loading real weather dataset from {data}")
+        X, y = load_real_data(data)
     else:
-        if args.data:
-            print(f"Dataset not found at {args.data}. Falling back to synthetic sample data.")
+        if data:
+            print(f"Dataset not found at {data}. Falling back to synthetic sample data.")
         else:
             print("No dataset path provided, training with synthetic sample data.")
         X, y = make_synthetic_data()
@@ -112,4 +106,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Train or retrain the rainfall prediction model.")
+    parser.add_argument(
+        "--data",
+        type=str,
+        default=None,
+        help="Path to a CSV dataset containing historical weather and rainfall information.",
+    )
+    args = parser.parse_args()
+    main(data=args.data)
+
