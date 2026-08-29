@@ -10,17 +10,17 @@
 
 ---
 
-## 🌐 Live Deployments
+## Live Deployments
 
-- **🖥️ Frontend Web App**: [https://krishimitr-frontend.onrender.com](https://krishimitr-frontend.onrender.com)
-- **⚡ Backend REST API**: [https://krishimitr-bucq.onrender.com](https://krishimitr-bucq.onrender.com)
-- **📖 Interactive API Docs (Swagger UI)**: [https://krishimitr-bucq.onrender.com/docs](https://krishimitr-bucq.onrender.com/docs)
+- ** Frontend Web App**: [https://krishimitr-frontend.onrender.com](https://krishimitr-frontend.onrender.com)
+- ** Backend REST API**: [https://krishimitr-bucq.onrender.com](https://krishimitr-bucq.onrender.com)
+- ** Interactive API Docs (Swagger UI)**: [https://krishimitr-bucq.onrender.com/docs](https://krishimitr-bucq.onrender.com/docs)
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 1. 🍃 AI Plant Disease Detection
+### 1. AI Plant Disease Detection
 - Upload or capture leaf photos to diagnose crop health.
 - Identifies major crop diseases such as **Yellow Rust (Wheat)**, **Late Blight (Tomato)**, and **Rice Blast (Paddy)**.
 - Provides actionable diagnostic reports:
@@ -29,22 +29,22 @@
   - **Chemical control measures** (e.g., Propiconazole, Mancozeb, Tricyclazole)
   - **Preventive actions**
 
-### 2. 🌧️ ML Rainfall Prediction & Live Weather
+### 2. ML Rainfall Prediction & Live Weather
 - Predicts seasonal and monthly rainfall using trained machine learning models based on geographical region, season, and atmospheric conditions.
 - Real-time weather integration powered by **Open-Meteo API** (live temperature, humidity, atmospheric pressure, and wind speed).
 
-### 3. 🌱 Smart Crop Recommendation
+### 3. Smart Crop Recommendation
 - Recommends the most suitable and profitable crops tailored to specific soil types (Alluvial, Black, Red, Clay, Sandy), agro-climatic zones, and seasonal conditions.
 
-### 4. 📊 Market Trends & Crop Analytics
+### 4. Market Trends & Crop Analytics
 - Real-time market insights, mandi price indications, and crop health metrics to maximize farmer revenue.
 
-### 5. 🌐 Bilingual Support (हिन्दी / English)
+### 5. Bilingual Support (हिन्दी / English)
 - Full one-click localization between Hindi and English for maximum rural accessibility.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -56,7 +56,7 @@
 
 ---
 
-## 🚀 Getting Started Locally
+##  Getting Started Locally
 
 ### Prerequisites
 - **Node.js** (v18 or higher)
@@ -113,7 +113,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 KRISHIMITR/
@@ -141,7 +141,7 @@ KRISHIMITR/
 
 ---
 
-## ☁️ Deployment on Render
+## Deployment on Render
 
 This project includes a preconfigured [`render.yaml`](./render.yaml) for one-click deployment:
 
@@ -158,10 +158,8 @@ This project includes a preconfigured [`render.yaml`](./render.yaml) for one-cli
 
 ---
 
-## 📜 License
-Distributed under the **MIT License**. Feel free to use, modify, and distribute for educational and commercial purposes.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 - **Ayush Pandey** — [GitHub (@Ayush26-03)](https://github.com/Ayush26-03)
