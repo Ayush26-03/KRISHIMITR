@@ -164,4 +164,4 @@ Distributed under the **MIT License**. Feel free to use, modify, and distribute 
 ---
 
 ## 👨‍💻 Author
-- **Ayush Kumar Pandey** — [GitHub (@Ayush26-03)](https://github.com/Ayush26-03)
+- **Ayush Pandey** — [GitHub (@Ayush26-03)](https://github.com/Ayush26-03)
